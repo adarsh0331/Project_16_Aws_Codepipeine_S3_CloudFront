@@ -1,0 +1,24 @@
+version: 0.0
+os: linux
+
+files:
+  - source: /output/index.html
+    destination: /var/www/html/
+  - source: /output/style.css
+    destination: /var/www/html/
+
+hooks:
+  ApplicationStop:
+    - location: scripts/stop_server.sh
+      timeout: 300
+      runas: root
+
+  BeforeInstall:
+    - location: scripts/install_dependencies.sh
+      timeout: 300
+      runas: root
+
+  AfterInstall:
+    - location: scripts/start_server.sh
+      timeout: 300
+      runas: root
