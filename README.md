@@ -1,5 +1,6 @@
 <img width="1307" height="898" alt="diagram-export-10-24-2025-12_42_01-AM" src="https://github.com/user-attachments/assets/8bdf14cd-115d-45fd-9a61-bcb4a7b8582f" />
 
+
 # Hosting a Static Website on AWS Using S3 and CloudFront
 
 This guide provides a comprehensive, step-by-step process for hosting a static website on AWS using Amazon S3 for storage and Amazon CloudFront for content delivery. It is designed for DevOps engineers and frontend developers deploying simple HTML/CSS sites or more complex single-page applications (SPAs) like React apps. Static sites are serverless, cost-effective, and scalable, making this setup ideal for portfolios, landing pages, or documentation sites.
